@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <header className="header" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.9)' : ""}}>
       <nav className="nav container">
-        <a href="/" className="nav_logo">
+        <a href="/home" className="nav_logo">
           Utkarsh
         </a>
 
