@@ -20,7 +20,7 @@ const Works = [
     image: Work2,
     title: "Git Stare",
     category: "Web App",
-    url: "https://gitstare.herokuapp.com/",
+    url: "https://utkarsh3020.github.io/Git_Stare_Clone/",
   },
   {
     id: 3,
