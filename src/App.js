@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useContext } from "react";
 import "./App.css";
 import About from "./components/about/About";
