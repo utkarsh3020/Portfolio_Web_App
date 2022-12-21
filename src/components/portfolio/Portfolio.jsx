@@ -16,28 +16,52 @@ const Portfolio = () => {
     setItems(updatedItems);
   };
   return (
-    <section className="portfolio section" id="work" style={{color: darkMode && "white"}}>
-      <h2 className="section_title" style={{color: darkMode && "white"}}>Portfolio</h2>
+    <section
+      className="portfolio section"
+      id="work"
+      style={{ color: darkMode && "white" }}
+    >
+      <h2 className="section_title" style={{ color: darkMode && "white" }}>
+        Portfolio
+      </h2>
       <span className="section_subtitle">Recent Works</span>
 
       <div className="work_filters">
         <span
           className={items === Works ? "work_item-active" : "work_item"}
           onClick={() => setItems(Works)}
-          style={{backgroundColor: darkMode ? "white" : "", color: darkMode && "#222"}}
+          style={{
+            color: darkMode && "#fff"
+          }}
         >
           All
         </span>
-        <span style={{color: darkMode && "white"}} className="work_item" onClick={() => filterItem("Web App")}>
+        <span
+          style={{ color: darkMode && "white" }}
+          className="work_item"
+          onClick={() => filterItem("Web App")}
+        >
           Web App
         </span>
-        <span style={{color: darkMode && "white"}} className="work_item" onClick={() => filterItem("Design")}>
+        <span
+          style={{ color: darkMode && "white" }}
+          className="work_item"
+          onClick={() => filterItem("Design")}
+        >
           Design
         </span>
-        <span style={{color: darkMode && "white"}} className="work_item" onClick={() => filterItem("Blogs")}>
+        <span
+          style={{ color: darkMode && "white" }}
+          className="work_item"
+          onClick={() => filterItem("Blogs")}
+        >
           Blogs
         </span>
-        <span style={{color: darkMode && "white"}} className="work_item" onClick={() => filterItem("Game")}>
+        <span
+          style={{ color: darkMode && "white" }}
+          className="work_item"
+          onClick={() => filterItem("Game")}
+        >
           Game
         </span>
       </div>
@@ -46,7 +70,11 @@ const Portfolio = () => {
         {items.map((elem) => {
           const { id, image, title, category, url } = elem;
           return (
-            <div className="work_card" key={id} style={{backgroundColor: darkMode ? "#222" : ""}}>
+            <div
+              className="work_card"
+              key={id}
+              style={{ backgroundColor: darkMode ? "#222" : "" }}
+            >
               <div className="work_thumbnail">
                 <img src={image} alt="" className="work_img" />
                 <div className="work_mask"></div>

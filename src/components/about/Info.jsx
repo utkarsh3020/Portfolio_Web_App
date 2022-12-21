@@ -8,8 +8,8 @@ const Info = () => {
     <div className="about_info grid">
         <div className="about_box" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
             <i style={{ color: darkMode && "white" }} class='about_icon bx bx-award'></i>
-            <h3 style={{ color: darkMode && "white" }} className="about_title">Experience</h3>
-            <span className="about_subtitle">2 years working</span>
+            <h3 style={{ color: darkMode && "white" }} className="about_title">Designation</h3>
+            <span className="about_subtitle">Student</span>
         </div>
 
         <div className="about_box" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>

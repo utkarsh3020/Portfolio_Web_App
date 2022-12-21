@@ -157,5 +157,9 @@ textarea {
 }
 
 /* For Small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
+  .contact_message{
+    padding-top: 12rem;
+    padding-left: 5rem;
+  }
 }

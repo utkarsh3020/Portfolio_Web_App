@@ -8,13 +8,12 @@ const Contact = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const [message, setMessage] = useState(false);
+  const [thankMessage, setThankMessage] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm(
       "service_zzelk9n",
       "template_mav89xc",
@@ -22,27 +21,49 @@ const Contact = () => {
       "OuY1zbH6Of47opr3F"
     );
     e.target.reset();
-    setMessage(true);
+    setThankMessage(true);
   };
 
-  setTimeout(() =>{
-    setMessage(false);
-  },5000);
+  setTimeout(() => {
+    setThankMessage(false);
+  }, 5000);
 
   return (
-    <section className="contact section" id="contact" style={{color: darkMode && "white"}}>
-      <h2 className="section_title" style={{color: darkMode && "white"}}>Contact Me</h2>
+    <section
+      className="contact section"
+      id="contact"
+      style={{ color: darkMode && "white" }}
+    >
+      <h2 className="section_title" style={{ color: darkMode && "white" }}>
+        Contact Me
+      </h2>
       <span className="section_subtitle">Get in touch</span>
 
       <div className="contact_container container grid">
         <div className="contact_content">
-          <h3 className="contact_title" style={{color: darkMode && "white"}}>Talk to me</h3>
+          <h3 className="contact_title" style={{ color: darkMode && "white" }}>
+            Talk to me
+          </h3>
 
           <div className="contact__info">
-            <div className="contact_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.5)' : ""}}>
-              <i style={{color: darkMode && "white"}} className="bx bxl-gmail contact_card-icon"></i>
+            <div
+              className="contact_card"
+              style={{
+                backgroundColor: darkMode ? "#222" : "",
+                boxShadow: darkMode ? "0 3px 10px rgb(0 0 0 / 0.5)" : "",
+              }}
+            >
+              <i
+                style={{ color: darkMode && "white" }}
+                className="bx bxl-gmail contact_card-icon"
+              ></i>
 
-              <h3 style={{color: darkMode && "white"}} className="contact_card-title">Email</h3>
+              <h3
+                style={{ color: darkMode && "white" }}
+                className="contact_card-title"
+              >
+                Email
+              </h3>
               <span className="contact_card-data">
                 utkarshgupta946@gmail.com
               </span>
@@ -52,16 +73,34 @@ const Contact = () => {
                 className="contact_button"
                 target="_blank"
                 rel="noreferrer"
-                style={{color: darkMode && "white"}}
+                style={{ color: darkMode && "white" }}
               >
-                Write me <i style={{color: darkMode && "white"}} className="bx bx-right-arrow-alt contact_button-icon"></i>
+                Write me{" "}
+                <i
+                  style={{ color: darkMode && "white" }}
+                  className="bx bx-right-arrow-alt contact_button-icon"
+                ></i>
               </a>
             </div>
 
-            <div className="contact_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.5)' : ""}}>
-              <i style={{color: darkMode && "white"}} className="bx bxl-whatsapp contact_card-icon"></i>
+            <div
+              className="contact_card"
+              style={{
+                backgroundColor: darkMode ? "#222" : "",
+                boxShadow: darkMode ? "0 3px 10px rgb(0 0 0 / 0.5)" : "",
+              }}
+            >
+              <i
+                style={{ color: darkMode && "white" }}
+                className="bx bxl-whatsapp contact_card-icon"
+              ></i>
 
-              <h3 style={{color: darkMode && "white"}} className="contact_card-title">WhatsApp</h3>
+              <h3
+                style={{ color: darkMode && "white" }}
+                className="contact_card-title"
+              >
+                WhatsApp
+              </h3>
               <span className="contact_card-data">9461691054</span>
 
               <a
@@ -69,16 +108,34 @@ const Contact = () => {
                 className="contact_button"
                 target="_blank"
                 rel="noreferrer"
-                style={{color: darkMode && "white"}}
+                style={{ color: darkMode && "white" }}
               >
-                Write me <i style={{color: darkMode && "white"}} className="bx bx-right-arrow-alt contact_button-icon"></i>
+                Write me{" "}
+                <i
+                  style={{ color: darkMode && "white" }}
+                  className="bx bx-right-arrow-alt contact_button-icon"
+                ></i>
               </a>
             </div>
 
-            <div className="contact_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.5)' : ""}}>
-              <i style={{color: darkMode && "white"}} className="bx bxl-linkedin contact_card-icon"></i>
+            <div
+              className="contact_card"
+              style={{
+                backgroundColor: darkMode ? "#222" : "",
+                boxShadow: darkMode ? "0 3px 10px rgb(0 0 0 / 0.5)" : "",
+              }}
+            >
+              <i
+                style={{ color: darkMode && "white" }}
+                className="bx bxl-linkedin contact_card-icon"
+              ></i>
 
-              <h3 style={{color: darkMode && "white"}} className="contact_card-title">LinkedIn</h3>
+              <h3
+                style={{ color: darkMode && "white" }}
+                className="contact_card-title"
+              >
+                LinkedIn
+              </h3>
               <span className="contact_card-data">utkarshgupta30</span>
 
               <a
@@ -86,55 +143,91 @@ const Contact = () => {
                 className="contact_button"
                 target="_blank"
                 rel="noreferrer"
-                style={{color: darkMode && "white"}}
+                style={{ color: darkMode && "white" }}
               >
-                Write me <i style={{color: darkMode && "white"}} className="bx bx-right-arrow-alt contact_button-icon"></i>
+                Write me{" "}
+                <i
+                  style={{ color: darkMode && "white" }}
+                  className="bx bx-right-arrow-alt contact_button-icon"
+                ></i>
               </a>
             </div>
           </div>
         </div>
 
         <div className="contact_content">
-          <h3 className="contact_title" style={{color: darkMode && "white"}}>Write me your project</h3>
+          <h3 className="contact_title" style={{ color: darkMode && "white" }}>
+            Write me your project
+          </h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact_form">
             <div className="contact_form-div">
-              <label style={{backgroundColor: darkMode ? "#222" : ""}} className="contact_form-tag">Name</label>
+              <label
+                style={{ backgroundColor: darkMode ? "#222" : "" }}
+                className="contact_form-tag"
+              >
+                Name
+              </label>
               <input
                 type="text"
                 name="name"
                 className="contact_form-input"
                 placeholder="Enter your name"
                 required
-                style={{color: darkMode && "white", borderColor: darkMode ? "white" : ""}}
+                style={{
+                  color: darkMode && "white",
+                  borderColor: darkMode ? "white" : "",
+                }}
               />
             </div>
 
             <div className="contact_form-div">
-              <label style={{backgroundColor: darkMode ? "#222" : ""}} className="contact_form-tag">Email</label>
+              <label
+                style={{ backgroundColor: darkMode ? "#222" : "" }}
+                className="contact_form-tag"
+              >
+                Email
+              </label>
               <input
                 type="email"
                 name="email"
                 className="contact_form-input"
                 placeholder="Enter your email"
                 required
-                style={{color: darkMode && "white", borderColor: darkMode ? "white" : ""}}
+                style={{
+                  color: darkMode && "white",
+                  borderColor: darkMode ? "white" : "",
+                }}
               />
             </div>
 
             <div className="contact_form-div contact_form-area">
-              <label style={{backgroundColor: darkMode ? "#222" : ""}} className="contact_form-tag">Message</label>
+              <label
+                style={{ backgroundColor: darkMode ? "#222" : "" }}
+                className="contact_form-tag"
+              >
+                Message
+              </label>
               <textarea
                 name="message"
                 className="contact_form-input"
                 cols="30"
                 rows="10"
                 placeholder="Enter your ideas"
-                style={{color: darkMode && "white", borderColor: darkMode ? "white" : ""}}
+                style={{
+                  color: darkMode && "white",
+                  borderColor: darkMode ? "white" : "",
+                }}
               />
             </div>
 
-            <button className="button button-flex" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.5)' : ""}}>
+            <button
+              className="button button-flex"
+              style={{
+                backgroundColor: darkMode ? "#222" : "",
+                boxShadow: darkMode ? "0 3px 10px rgb(0 0 0 / 0.5)" : "",
+              }}
+            >
               Send Message
               <svg
                 class="button__icon"
@@ -154,7 +247,18 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
-            {message && <span className="contact_message" style={{color: darkMode && "white"}}>Thanks, I'll reply ASAP<i style={{color: darkMode && "white"}} className='bx bx-happy smile_icon'></i></span>}
+            {thankMessage && (
+              <span
+                className="contact_message"
+                style={{ color: darkMode && "white" }}
+              >
+                Thanks, I'll reply ASAP
+                <i
+                  style={{ color: darkMode && "white" }}
+                  className="bx bx-happy smile_icon"
+                ></i>
+              </span>
+            )}
           </form>
         </div>
       </div>
