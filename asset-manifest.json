@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_Web_App/static/css/main.9ef158b3.css",
-    "main.js": "/Portfolio_Web_App/static/js/main.26c4e4db.js",
+    "main.css": "/Portfolio_Web_App/static/css/main.717109a9.css",
+    "main.js": "/Portfolio_Web_App/static/js/main.8758a4ec.js",
     "static/media/Pro.jpg": "/Portfolio_Web_App/static/media/Pro.c010bd076dabccc6ff70.jpg",
     "static/media/Profile.jpg": "/Portfolio_Web_App/static/media/Profile.53d00705af0eb6dd7a72.jpg",
     "static/media/CV - Utkarsh Gupta.pdf": "/Portfolio_Web_App/static/media/CV - Utkarsh Gupta.f5b483c2aa7c2d75c933.pdf",
@@ -13,11 +13,11 @@
     "static/media/work4.jpg": "/Portfolio_Web_App/static/media/work4.aee985961b648f4df1f2.jpg",
     "static/media/work2.avif": "/Portfolio_Web_App/static/media/work2.8d6aa8962c58b8ad5a85.avif",
     "index.html": "/Portfolio_Web_App/index.html",
-    "main.9ef158b3.css.map": "/Portfolio_Web_App/static/css/main.9ef158b3.css.map",
-    "main.26c4e4db.js.map": "/Portfolio_Web_App/static/js/main.26c4e4db.js.map"
+    "main.717109a9.css.map": "/Portfolio_Web_App/static/css/main.717109a9.css.map",
+    "main.8758a4ec.js.map": "/Portfolio_Web_App/static/js/main.8758a4ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ef158b3.css",
-    "static/js/main.26c4e4db.js"
+    "static/css/main.717109a9.css",
+    "static/js/main.8758a4ec.js"
   ]
 }
