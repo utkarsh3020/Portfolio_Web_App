@@ -15,6 +15,7 @@
   font-weight: var(--font-medium);
   color: var(--title-color);
   transition: 0.3s;
+  text-transform: capitalize;
 }
 
 .work_item-active{
@@ -25,12 +26,10 @@
 }
 
 .work_item:hover {
-  color: var(--title-color-dark);
-}
-
-.work_item-active:hover{
+  background-color: var(--title-color);
   color: var(--container-color);
-  background-color: var(--title-color-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1.2rem;
 }
 
 .work_container {

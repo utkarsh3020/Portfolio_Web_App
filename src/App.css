@@ -88,7 +88,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: #35589A;
+  background-color: var(--text-color);
   border-radius: 50px;
 }
 

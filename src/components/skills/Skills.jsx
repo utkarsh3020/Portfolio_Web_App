@@ -6,55 +6,156 @@ const Skills = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <section className="skills section" id="resume" style={{color: darkMode && "white"}}>
-      <h2 className="section_title" style={{color: darkMode && "white"}}>Skills</h2>
+    <section className="skills section" id="resume">
+      <h2 className="section_title" style={{ color: darkMode && "white" }}>
+        Skills
+      </h2>
       <span className="section_subtitle">My technical skills</span>
-
-      <div className="grid skills_container container">
-        <div className="skills_grid">
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-html5"></i>
-            <span className="skill_span">HTML</span>
+      <div className="skills_grid">
+        <div className="skills_container">
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#FF5733", "--num": "90" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2>
+                <i className="skill_icon bx bxl-html5"></i>
+                </h2>
+              <span className="skill_span">90%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-css3"></i>
-            <span className="skill_span">CSS</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#2965f1", "--num": "85" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-css3"></i>
+                </h2>
+                <span>80%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i class='skill_icon bx bxl-bootstrap' ></i>
-            <span className="skill_span">Bootstap</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#602C50", "--num": "70" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-bootstrap"></i>
+                </h2>
+                <span>75%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-sass"></i>
-            <span className="skill_span">Sass</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#c69", "--num": "50" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-sass"></i>
+                </h2>
+                <span>50%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-javascript"></i>
-            <span className="skill_span">JavaScript</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#f0db4f", "--num": "65" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-javascript"></i>
+                </h2>
+                <span>65%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-react"></i>
-            <span className="skill_span">React JS</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#61DBFB", "--num": "50" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-react"></i>
+                </h2>
+                <span>50%</span>
+              </div>
+            </div>
           </div>
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-nodejs"></i>
-            <span className="skill_span">Node JS</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#3c873a", "--num": "40" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-nodejs"></i>
+                </h2>
+                <span>40%</span>
+              </div>
+            </div>
           </div>
-
-          {/* <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-python"></i>
-            <span className="skill_span">Python</span>
-          </div> */}
-
-          <div className="skills_content" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
-            <i className="skill_icon bx bxl-c-plus-plus"></i>
-            <span className="skill_span">C++</span>
+          <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
+            <div
+              className="percent"
+              style={{ "--clr": "#4B8BBE", "--num": "45" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div className="num">
+                <h2 style={{color: darkMode && "white"}}>
+                <i className="skill_icon bx bxl-c-plus-plus"></i>
+                </h2>
+                <span>45%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

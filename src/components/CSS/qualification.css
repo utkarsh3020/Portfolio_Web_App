@@ -19,7 +19,7 @@
 }
 
 .qualification_button:hover{
-    color: var(--title-color-dark);
+    color: var(--active-color);
 }
 
 .qualification_icon{
@@ -28,9 +28,7 @@
 }
 
 .qualification_active{
-    /* color: var(--title-color-dark); */
     color: var(--active-color);
-    /* color: #EC994B; */
 }
 
 .qualification_sections{

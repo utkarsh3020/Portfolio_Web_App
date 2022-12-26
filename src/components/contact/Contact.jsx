@@ -8,20 +8,108 @@ const Contact = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
+  // For Validation
+
+  const [values, setValues] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [validations, setValidations] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const validateAll = () => {
+    const { name, email, message } = values;
+    const validations = { name: "", email: "", message: "" };
+    let isValid = true;
+
+    if (!name) {
+      validations.name = "Name is required";
+      isValid = false;
+    }
+
+    if ((name && name.length < 3) || name.length > 50) {
+      validations.name = "Name must contain between 3 and 50 characters";
+      isValid = false;
+    }
+
+    if (!email) {
+      validations.email = "Email is required";
+      isValid = false;
+    }
+
+    if (email && !/\S+@\S+\.\S+/.test(email)) {
+      validations.email = "Email format must be as example@mail.com";
+      isValid = false;
+    }
+
+    if (!message) {
+      validations.message = "Message is required";
+      isValid = false;
+    }
+
+    if (!isValid) {
+      setValidations(validations);
+    }
+
+    return isValid;
+  };
+
+  const validateOne = (e) => {
+    const { name } = e.target;
+    const value = values[name];
+    let message = "";
+
+    if (!value) {
+      message = `${name} is required`;
+    }
+
+    if (value && name === "name" && (value.length < 3 || value.length > 50)) {
+      message = "Name must contain between 3 and 50 characters";
+    }
+
+    if (value && name === "email" && !/\S+@\S+\.\S+/.test(value)) {
+      message = "Email format must be as example@mail.com";
+    }
+
+    setValidations({ ...validations, [name]: message });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
+  const { name, email, message } = values;
+
+  const { name: nameVal, email: emailVal, message: messageVal } = validations;
+
+  // Successful msg
   const [thankMessage, setThankMessage] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_zzelk9n",
-      "template_mav89xc",
-      form.current,
-      "OuY1zbH6Of47opr3F"
-    );
-    e.target.reset();
-    setThankMessage(true);
+
+    const isValid = validateAll();
+
+    if (!isValid) {
+      return false;
+    } else {
+      emailjs.sendForm(
+        "service_zzelk9n",
+        "template_mav89xc",
+        form.current,
+        "OuY1zbH6Of47opr3F"
+      );
+      e.target.reset();
+      setThankMessage(true);
+    }
   };
 
   setTimeout(() => {
@@ -173,12 +261,14 @@ const Contact = () => {
                 name="name"
                 className="contact_form-input"
                 placeholder="Enter your name"
-                required
+                onChange={handleChange}
+                onBlur={validateOne}
                 style={{
                   color: darkMode && "white",
                   borderColor: darkMode ? "white" : "",
                 }}
               />
+              <span className="errmsg" style={{ backgroundColor: darkMode ? "#222" : "" }}>{nameVal}</span>
             </div>
 
             <div className="contact_form-div">
@@ -193,12 +283,14 @@ const Contact = () => {
                 name="email"
                 className="contact_form-input"
                 placeholder="Enter your email"
-                required
+                onChange={handleChange}
+                onBlur={validateOne}
                 style={{
                   color: darkMode && "white",
                   borderColor: darkMode ? "white" : "",
                 }}
               />
+              <span className="errmsg" style={{ backgroundColor: darkMode ? "#222" : "" }}>{emailVal}</span>
             </div>
 
             <div className="contact_form-div contact_form-area">
@@ -214,11 +306,14 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 placeholder="Enter your ideas"
+                onChange={handleChange}
+                onBlur={validateOne}
                 style={{
                   color: darkMode && "white",
                   borderColor: darkMode ? "white" : "",
                 }}
               />
+              <span className="errmsg" style={{ backgroundColor: darkMode ? "#222" : "" }}>{messageVal}</span>
             </div>
 
             <button
