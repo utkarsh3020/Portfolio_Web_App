@@ -164,6 +164,11 @@ textarea {
     .contact_message{
       padding-left: 10px;
     }
+
+    .errmsg{
+      padding: 0 3px;
+      font-size: 12px;
+    }
 }
 
 /* For Small devices */
