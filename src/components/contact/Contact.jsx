@@ -114,7 +114,7 @@ const Contact = () => {
 
   setTimeout(() => {
     setThankMessage(false);
-  }, 15000);
+  }, 35000);
 
   return (
     <section
