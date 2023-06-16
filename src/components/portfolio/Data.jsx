@@ -5,6 +5,7 @@ import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.avif";
 import Work7 from "../../assets/work7.jpg";
+import Work8 from "../../assets/work8.jpg";
 
 
 export const projectsData = [
@@ -32,7 +33,7 @@ export const projectsData = [
   {
     id: 4,
     image: Work4,
-    title: "Landing Page",
+    title: "Responsive Web Page",
     category: "design",
     url: "https://utkarsh3020.github.io/Landing_UI/",
   },
@@ -43,19 +44,26 @@ export const projectsData = [
     category: "game",
     url: "https://utkarsh3020.github.io/Tic_Tac_Toe/",
   },
-  {
-    id: 6,
-    image: Work6,
-    title: "Adore English",
-    category: "blogs",
-    url: "https://www.adoreenglish.com/",
-  },
+  // {
+  //   id: 6,
+  //   image: Work6,
+  //   title: "Adore English",
+  //   category: "blogs",
+  //   url: "https://www.adoreenglish.com/",
+  // },
   {
     id: 7,
     image: Work7,
     title: "2D Breakout Game",
     category: "game",
     url: "https://utkarsh3020.github.io/2D-Breakout/",
+  },
+  {
+    id: 8,
+    image: Work8,
+    title: "2D Hangman Game",
+    category: "game",
+    url: "https://utkarsh3020.github.io/Hangman_Game/",
   },
 ];
 

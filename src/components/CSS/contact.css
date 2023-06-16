@@ -114,7 +114,8 @@ textarea {
 
 .smile_icon{
   padding-left: 5px;
-  font-size: var(--font-medium);
+  font-size: var(--normal-font-size);
+  color: var(--active-color);
 }
 
 .errmsg{

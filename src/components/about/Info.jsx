@@ -9,7 +9,7 @@ const Info = () => {
         <div className="about_box" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
             <i style={{ color: darkMode && "white" }} class='about_icon bx bx-award'></i>
             <h3 style={{ color: darkMode && "white" }} className="about_title">Designation</h3>
-            <span className="about_subtitle">Student</span>
+            <span className="about_subtitle">Developer</span>
         </div>
 
         <div className="about_box" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>

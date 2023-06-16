@@ -12,8 +12,13 @@ const Qualification = () => {
     setToggleState(index);
   };
   return (
-    <section className="education section" style={{color: darkMode && "white"}}>
-      <h2 className="section_title" style={{color: darkMode && "white"}}>Qualification</h2>
+    <section
+      className="education section"
+      style={{ color: darkMode && "white" }}
+    >
+      <h2 className="section_title" style={{ color: darkMode && "white" }}>
+        Qualification
+      </h2>
       <span className="section_subtitle">My Journey</span>
 
       <div className="qualification_container container">
@@ -25,7 +30,7 @@ const Qualification = () => {
                 : "qualification_button button-flex"
             }
             onClick={() => toggleTab(1)}
-            style={{color: darkMode && "white"}}
+            style={{ color: darkMode && "white" }}
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
             Education
@@ -38,7 +43,7 @@ const Qualification = () => {
                 : "qualification_button button-flex"
             }
             onClick={() => toggleTab(2)}
-            style={{color: darkMode && "white"}}
+            style={{ color: darkMode && "white" }}
           >
             <i className="uil uil-briefcase-alt qualification_icon"></i>
             Experience
@@ -55,7 +60,10 @@ const Qualification = () => {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title" style={{color: darkMode && "white"}}>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
                   Bachelor's in Technology
                 </h3>
                 <span className="qualification_subtitle">
@@ -68,8 +76,14 @@ const Qualification = () => {
               </div>
 
               <div>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_rounder"></span>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_line"></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
               </div>
             </div>
 
@@ -77,12 +91,21 @@ const Qualification = () => {
               <div></div>
 
               <div>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_rounder"></span>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_line"></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
               </div>
 
               <div>
-                <h3 className="qualification_title" style={{color: darkMode && "white"}}>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
                   Senior Seconadary School
                 </h3>
                 <span className="qualification_subtitle">
@@ -97,7 +120,12 @@ const Qualification = () => {
 
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title" style={{color: darkMode && "white"}}>Secondary School</h3>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
+                  Secondary School
+                </h3>
                 <span className="qualification_subtitle">
                   Royal International School
                 </span>
@@ -108,8 +136,14 @@ const Qualification = () => {
               </div>
 
               <div>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_rounder"></span>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_line"></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
               </div>
             </div>
           </div>
@@ -122,15 +156,51 @@ const Qualification = () => {
             }
           >
             <div className="qualification_data">
-              <div></div>
-
               <div>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_rounder"></span>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_line"></span>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
+                  MERN Stack Developer
+                </h3>
+                <span className="qualification_subtitle">Rawattech Consulting and Solutions Private Limited</span>
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt qualification_calendar-icon"></i>
+                  Jan 2023 - Present
+                </div>
               </div>
 
               <div>
-                <h3 className="qualification_title" style={{color: darkMode && "white"}}>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
+              </div>
+            </div>
+
+            <div className="qualification_data">
+              <div></div>
+
+              <div>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
+              </div>
+
+              <div>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
                   Full Stack Web Developer
                 </h3>
                 <span className="qualification_subtitle">
@@ -145,7 +215,12 @@ const Qualification = () => {
 
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title" style={{color: darkMode && "white"}}>Web Developer</h3>
+                <h3
+                  className="qualification_title"
+                  style={{ color: darkMode && "white" }}
+                >
+                  Web Developer
+                </h3>
                 <span className="qualification_subtitle">CVDigimax</span>
                 <div className="qualification_calendar">
                   <i className="uil uil-calendar-alt qualification_calendar-icon"></i>
@@ -154,8 +229,14 @@ const Qualification = () => {
               </div>
 
               <div>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_rounder"></span>
-                <span style={{backgroundColor: darkMode && "white"}} className="qualification_line"></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_rounder"
+                ></span>
+                <span
+                  style={{ backgroundColor: darkMode && "white" }}
+                  className="qualification_line"
+                ></span>
               </div>
             </div>
           </div>

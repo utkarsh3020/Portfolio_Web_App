@@ -112,9 +112,9 @@ const Contact = () => {
     }
   };
 
-  setTimeout(() => {
-    setThankMessage(false);
-  }, 5000);
+  // setTimeout(() => {
+  //   setThankMessage(false);
+  // }, 15000);
 
   return (
     <section
