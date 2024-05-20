@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_Web_App/static/css/main.c6120248.css",
-    "main.js": "/Portfolio_Web_App/static/js/main.36f1840a.js",
+    "main.css": "/Portfolio_Web_App/static/css/main.2b5ee299.css",
+    "main.js": "/Portfolio_Web_App/static/js/main.01fe8d80.js",
     "static/media/Pro.jpg": "/Portfolio_Web_App/static/media/Pro.c010bd076dabccc6ff70.jpg",
     "static/media/Profile.jpg": "/Portfolio_Web_App/static/media/Profile.53d00705af0eb6dd7a72.jpg",
     "static/media/CV - Utkarsh Gupta.pdf": "/Portfolio_Web_App/static/media/CV - Utkarsh Gupta.f5b483c2aa7c2d75c933.pdf",
@@ -13,12 +13,23 @@
     "static/media/work3.avif": "/Portfolio_Web_App/static/media/work3.40716390ba7ca1657001.avif",
     "static/media/work4.jpg": "/Portfolio_Web_App/static/media/work4.aee985961b648f4df1f2.jpg",
     "static/media/work2.avif": "/Portfolio_Web_App/static/media/work2.8d6aa8962c58b8ad5a85.avif",
+    "static/media/mysql-3.svg": "/Portfolio_Web_App/static/media/mysql-3.5ed4a5dd3156991212575952fdf1f366.svg",
+    "static/media/nodejs-1.svg": "/Portfolio_Web_App/static/media/nodejs-1.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
+    "static/media/react-2.svg": "/Portfolio_Web_App/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/firebase-1.svg": "/Portfolio_Web_App/static/media/firebase-1.e6583a29712875c8977afcba1d0b6883.svg",
+    "static/media/redux.svg": "/Portfolio_Web_App/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/mongodb-icon-1-1.svg": "/Portfolio_Web_App/static/media/mongodb-icon-1-1.92827b074f68e1524b4e36e0717ce1b4.svg",
+    "static/media/git-icon.svg": "/Portfolio_Web_App/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "index.html": "/Portfolio_Web_App/index.html",
-    "main.c6120248.css.map": "/Portfolio_Web_App/static/css/main.c6120248.css.map",
-    "main.36f1840a.js.map": "/Portfolio_Web_App/static/js/main.36f1840a.js.map"
+    "static/media/tailwind-css-2.svg": "/Portfolio_Web_App/static/media/tailwind-css-2.315d0ac2a2708d5f06972906113dfbf1.svg",
+    "static/media/css-3.svg": "/Portfolio_Web_App/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html-1.svg": "/Portfolio_Web_App/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/javascript-1.svg": "/Portfolio_Web_App/static/media/javascript-1.b879f838faf1cb951d1c2230fd933a39.svg",
+    "main.2b5ee299.css.map": "/Portfolio_Web_App/static/css/main.2b5ee299.css.map",
+    "main.01fe8d80.js.map": "/Portfolio_Web_App/static/js/main.01fe8d80.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6120248.css",
-    "static/js/main.36f1840a.js"
+    "static/css/main.2b5ee299.css",
+    "static/js/main.01fe8d80.js"
   ]
 }
