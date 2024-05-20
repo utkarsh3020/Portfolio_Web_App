@@ -1,6 +1,17 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context";
 import "../CSS/skills.css";
+import HTMLIcon from '../../assets/html-1.svg';
+import CSSIcon from '../../assets/css-3.svg';
+import JSIcon from '../../assets/javascript-1.svg';
+import TailwindIcon from '../../assets/tailwind-css-2.svg';
+import NodeIcon from '../../assets/nodejs-1.svg';
+import ReactIcon from '../../assets/react-2.svg';
+import ReduxIcon from '../../assets/redux.svg';
+import MongoIcon from '../../assets/mongodb-icon-1-1.svg';
+import GitIcon from '../../assets/git-icon.svg';
+import FirebaseIcon from '../../assets/firebase-1.svg';
+import MySQLIcon from '../../assets/mysql-3.svg';
 
 const Skills = () => {
   const theme = useContext(ThemeContext);
@@ -11,7 +22,127 @@ const Skills = () => {
         Skills
       </h2>
       <span className="section_subtitle">My technical skills</span>
-      <div className="skills_grid">
+      <div class="skills__container">
+          {/* <!--==================== SKILLS 1 ====================--> */}
+          <div class="skills__content">
+            <h3 class="skills__title" style={{color: darkMode && "white"}}>
+              <i class="ri-braces-line"></i> Frontend Developer
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={HTMLIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>HTML</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={CSSIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>CSS</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={JSIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>JavaScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={TailwindIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Tailwind</h3>
+                <span class="skills__subtitle">Beginner</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={ReactIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>React</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={ReduxIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Redux</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={GitIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Git</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+            </div>
+          </div>
+
+          {/* <!--==================== SKILLS 2 ====================--> */}
+          <div class="skills__content">
+            <h3 class="skills__title" style={{color: darkMode && "white"}}>
+              <i class="ri-braces-line"></i> Backend Developer
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={NodeIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Node JS</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={MongoIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Mongo DB</h3>
+                <span class="skills__subtitle">Beginner</span>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={FirebaseIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>Firebase</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src={MySQLIcon} alt="skills image" />
+                </div>
+
+                <h3 class="skills__name" style={{color: darkMode && "white"}}>MySQL</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+      {/* <div className="skills_grid">
         <div className="skills_container">
           <div className="skills_card" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : "", color: darkMode && "white"}}>
             <div
@@ -158,7 +289,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

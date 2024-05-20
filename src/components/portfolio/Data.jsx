@@ -77,9 +77,9 @@ export const projectsNav = [
     {
         name: 'design',
     },
-    {
-        name: 'blogs',
-    },
+    // {
+    //     name: 'blogs',
+    // },
     {
         name: 'game',
     },

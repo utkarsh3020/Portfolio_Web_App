@@ -18,7 +18,7 @@ const Footer = () => {
           </li>
           <li>
             <a style={{color: darkMode && "white"}} href="#resume" className="footer_link">
-              Resume
+              Skills
             </a>
           </li>
           <li>

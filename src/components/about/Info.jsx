@@ -20,8 +20,8 @@ const Info = () => {
 
         <div className="about_box" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.4)' : ""}}>
             <i style={{ color: darkMode && "white" }} class='about_icon bx bx-medal' ></i>
-            <h3 style={{ color: darkMode && "white" }} className="about_title">Achievements</h3>
-            <span className="about_subtitle">10+ Certificates</span>
+            <h3 style={{ color: darkMode && "white" }} className="about_title">Experience</h3>
+            <span className="about_subtitle">1+ Year</span>
         </div>
         
     </div>

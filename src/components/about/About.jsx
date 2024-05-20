@@ -9,8 +9,14 @@ const About = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <section className="about section" id="about" style={{color: darkMode && "white"}}>
-      <h2 className="section_title" style={{color: darkMode && "white"}}>About Me</h2>
+    <section
+      className="about section"
+      id="about"
+      style={{ color: darkMode && "white" }}
+    >
+      <h2 className="section_title" style={{ color: darkMode && "white" }}>
+        About Me
+      </h2>
       <span className="section_subtitle">My Intro</span>
 
       <div className="about_container container grid">
@@ -20,13 +26,34 @@ const About = () => {
           <Info />
 
           <p className="about_description">
-            Hello Everyone, I'm Utkarsh Gupta Pursuing Bachelor of Technology from Anand
-            International College of Engineering, Jaipur. Specialization in
-            Computer Science and Engineering. <br /><br />
-            I am a web enthusiast who is actively seeking opportunities in the field of Full Stack Development.
+            A passionate and dedicated Full Stack Developer specializing in the
+            MERN stack (MongoDB, Express.js, React.js, Node.js). With a strong
+            foundation in both front-end and back-end development. <br /> <br />{" "}
+            I create dynamic, responsive, and user-friendly web applications
+            that provide seamless experiences.
+            {/* <br />
+            <br />
+            My Skills and Expertise: Front-End Development: Proficient in HTML,
+            CSS, JavaScript, and modern frameworks like React.js. I excel in
+            building interactive user interfaces and single-page applications.
+            Back-End Development: Skilled in Node.js and Express.js for creating
+            robust server-side applications and RESTful APIs. Database
+            Management: Experienced with MongoDB for efficient data storage,
+            retrieval, and management in NoSQL databases. Version Control:
+            Proficient with Git and GitHub for collaborative development and
+            code versioning. Deployment: Familiar with deploying applications on
+            cloud platforms such as Heroku and AWS */}
           </p>
 
-          <a download="" href={CV} className="button button-flex" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.5)' : ""}}>
+          <a
+            download=""
+            href={CV}
+            className="button button-flex"
+            style={{
+              backgroundColor: darkMode ? "#222" : "",
+              boxShadow: darkMode ? "0 3px 10px rgb(0 0 0 / 0.5)" : "",
+            }}
+          >
             Download CV
             <svg
               class="button__icon"

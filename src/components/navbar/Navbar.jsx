@@ -40,7 +40,7 @@ const Navbar = () => {
 
             <li className="nav_item">
               <a style={{color: darkMode && "white"}} href="#resume" onClick={() => setActiveNav("#resume")} className={activeNav === "#resume" ? "nav_link active-link" : "nav_link"}>
-                <i className="uil uil-file-alt nav_icon"></i> Resume
+                <i className="uil uil-file-alt nav_icon"></i> Skills
               </a>
             </li>
 
