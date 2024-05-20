@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio_Web_App/static/css/main.2b5ee299.css",
-    "main.js": "/Portfolio_Web_App/static/js/main.01fe8d80.js",
+    "main.js": "/Portfolio_Web_App/static/js/main.c13606cf.js",
     "static/media/Pro.jpg": "/Portfolio_Web_App/static/media/Pro.c010bd076dabccc6ff70.jpg",
     "static/media/Profile.jpg": "/Portfolio_Web_App/static/media/Profile.53d00705af0eb6dd7a72.jpg",
-    "static/media/CV - Utkarsh Gupta.pdf": "/Portfolio_Web_App/static/media/CV - Utkarsh Gupta.f5b483c2aa7c2d75c933.pdf",
+    "static/media/CV - Utkarsh Gupta.pdf": "/Portfolio_Web_App/static/media/CV - Utkarsh Gupta.5de83cb4dcf9512c104c.pdf",
     "static/media/work1.jpg": "/Portfolio_Web_App/static/media/work1.36b67a380ef73e8dc0cd.jpg",
     "static/media/work5.jpg": "/Portfolio_Web_App/static/media/work5.843cc2e45432eea5c23e.jpg",
     "static/media/work6.avif": "/Portfolio_Web_App/static/media/work6.22863258fc27f094eccf.avif",
@@ -26,10 +26,10 @@
     "static/media/html-1.svg": "/Portfolio_Web_App/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript-1.svg": "/Portfolio_Web_App/static/media/javascript-1.b879f838faf1cb951d1c2230fd933a39.svg",
     "main.2b5ee299.css.map": "/Portfolio_Web_App/static/css/main.2b5ee299.css.map",
-    "main.01fe8d80.js.map": "/Portfolio_Web_App/static/js/main.01fe8d80.js.map"
+    "main.c13606cf.js.map": "/Portfolio_Web_App/static/js/main.c13606cf.js.map"
   },
   "entrypoints": [
     "static/css/main.2b5ee299.css",
-    "static/js/main.01fe8d80.js"
+    "static/js/main.c13606cf.js"
   ]
 }
