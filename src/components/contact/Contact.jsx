@@ -65,11 +65,12 @@ const Contact = () => {
     let message = "";
 
     if (!value) {
-      message = `${name} is required`;
+      const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
+      message = `${capitalizedName} is required`;
     }
 
-    if (value && name === "name" && (value.length < 3 || value.length > 50)) {
-      message = "Name must contain between 3 and 50 characters";
+    if (value && name === "name" && (value.length < 3 || value.length > 20)) {
+      message = "Name must contain between 3 and 20 characters";
     }
 
     if (value && name === "email" && !/\S+@\S+\.\S+/.test(value)) {
