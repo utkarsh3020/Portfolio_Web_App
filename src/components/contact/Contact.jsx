@@ -224,10 +224,10 @@ const Contact = () => {
               >
                 LinkedIn
               </h3>
-              <span className="contact_card-data">utkarshgupta30</span>
+              <span className="contact_card-data">utkarshguptta</span>
 
               <a
-                href="https://www.linkedin.com/in/utkarshgupta30/"
+                href="https://www.linkedin.com/in/utkarshguptta/"
                 className="contact_button"
                 target="_blank"
                 rel="noreferrer"

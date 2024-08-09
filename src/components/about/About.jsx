@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../CSS/about.css";
 import AboutImg from "../../assets/Profile.jpg";
-import CV from "../../assets/CV - Utkarsh Gupta.pdf";
+import CV from "../../assets/UtkarshGupta_CV.pdf";
 import Info from "./Info";
 import { ThemeContext } from "../../context";
 
