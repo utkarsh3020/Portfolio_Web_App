@@ -47,16 +47,6 @@ const Footer = () => {
           >
             <i className="uil uil-github-alt"></i>
           </a>
-
-          <a
-            href="https://www.instagram.com/utkarshguptta/"
-            className="footer_social-link"
-            target="_blank"
-            rel="noreferrer"
-            style={{backgroundColor: darkMode ? "white" : "", color: darkMode && "#222"}}
-          >
-            <i className="uil uil-instagram"></i>
-          </a>
         </div>
 
         <span style={{color: darkMode && "white"}} className="footer_copyright">

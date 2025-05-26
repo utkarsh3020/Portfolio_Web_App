@@ -65,7 +65,7 @@ const Data = () => {
         <span className="subtitle_span">
           <Typewriter
             options={{
-              strings: ["Web Developer", "Programmer", "Frontend Developer", "Backend Developer"],
+              strings: ["React Js Developer", "Frontend Developer", "Web Developer"],
               autoStart: true,
               loop: true,
             }}

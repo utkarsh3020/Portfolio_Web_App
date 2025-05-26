@@ -12,10 +12,6 @@ const Social = () => {
         <a href="https://github.com/utkarsh3020" className='home_social-icon' target="_blank" rel="noreferrer">
             <i style={{backgroundColor: darkMode ? "#222" : "", color: darkMode && "white"}} className="uil uil-github-alt"></i>
         </a>
-
-        {/* <a href="https://www.instagram.com/utkarshguptta/" className='home_social-icon' target="_blank" rel="noreferrer">
-            <i style={{backgroundColor: darkMode ? "#222" : "", color: darkMode && "white"}} className="uil uil-instagram"></i>
-        </a> */}
     </div>
   )
 }
