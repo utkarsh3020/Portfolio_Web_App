@@ -161,7 +161,7 @@ const Qualification = () => {
                   className="qualification_title"
                   style={{ color: darkMode && "white" }}
                 >
-                  MERN Stack Developer
+                  Project Engineer
                 </h3>
                 <span className="qualification_subtitle">Rawattech Consulting and Solutions Private Limited</span>
                 <div className="qualification_calendar">

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context";
 import "../CSS/navbar.css";
 
@@ -16,6 +16,34 @@ const Navbar = () => {
 //   Toggle Menu
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+
+  useEffect(() => {
+    const handleActiveLink = () => {
+      const sections = ["home", "about", "resume", "work", "contact"];
+      let found = false;
+
+      for (let id of sections) {
+        const section = document.getElementById(id);
+        
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setActiveNav(`#${id}`);
+            found = true;
+            break;
+          }
+        }
+      }
+
+      if (!found) {
+        setActiveNav(""); // none active
+      }
+    };
+
+    window.addEventListener("scroll", handleActiveLink);
+    return () => window.removeEventListener("scroll", handleActiveLink);
+  }, []);
+  
 
   return (
     <header className="header" style={{backgroundColor: darkMode ? "#222" : "", boxShadow: darkMode ? '0 3px 10px rgb(0 0 0 / 0.9)' : ""}}>

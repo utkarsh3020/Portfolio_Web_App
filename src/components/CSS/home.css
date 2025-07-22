@@ -51,7 +51,7 @@
   }
 
 .home_img{
-    background: url(../../assets/Pro.jpg);
+    background: url(../../assets/Profile_UG.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -164,13 +164,19 @@
     }
 
   }
+
+  @media (max-width: 520px){
+    .home_title{
+        font-size: var(--h1-font-size);
+    }
+  }
   
   
   /* For Small devices */
   @media screen and (max-width: 360px) {
-    .home_title{
+    /* .home_title{
         font-size: var(--large-font-size);
-    }
+    } */
 
     .home_subtitle{
         padding-right: 2.75rem;

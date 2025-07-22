@@ -128,14 +128,14 @@ const Skills = () => {
                 <span class="skills__subtitle">Intermediate</span>
               </div>
 
-              <div class="skills__data">
+              {/* <div class="skills__data">
                 <div class="skills__blob">
                   <img src={MySQLIcon} alt="skills image" />
                 </div>
 
                 <h3 class="skills__name" style={{color: darkMode && "white"}}>MySQL</h3>
                 <span class="skills__subtitle">Intermediate</span>
-              </div>
+              </div> */}
               
             </div>
           </div>

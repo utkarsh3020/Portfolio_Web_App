@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../CSS/about.css";
-import AboutImg from "../../assets/Profile.jpg";
+import AboutImg from "../../assets/Profile_UG.jpg";
 import CV from "../../assets/UtkarshGupta_CV.pdf";
 import Info from "./Info";
 import { ThemeContext } from "../../context";
@@ -26,23 +26,16 @@ const About = () => {
           <Info />
 
           <p className="about_description">
-            A passionate and dedicated Full Stack Developer specializing in the
-            MERN stack (MongoDB, Express.js, React.js, Node.js). With a strong
-            foundation in both front-end and back-end development. <br /> <br />{" "}
-            I create dynamic, responsive, and user-friendly web applications
-            that provide seamless experiences.
-            {/* <br />
+            A dedicated Front-End Developer who focuses on creating engaging and
+            dynamic user interfaces using modern web technologies. My expertise
+            is leveraging React.js to build responsive, intuitive,
+            high-performance web applications that deliver a seamless user
+            experience.
             <br />
-            My Skills and Expertise: Front-End Development: Proficient in HTML,
-            CSS, JavaScript, and modern frameworks like React.js. I excel in
-            building interactive user interfaces and single-page applications.
-            Back-End Development: Skilled in Node.js and Express.js for creating
-            robust server-side applications and RESTful APIs. Database
-            Management: Experienced with MongoDB for efficient data storage,
-            retrieval, and management in NoSQL databases. Version Control:
-            Proficient with Git and GitHub for collaborative development and
-            code versioning. Deployment: Familiar with deploying applications on
-            cloud platforms such as Heroku and AWS */}
+            <br />
+            Proficient in HTML, CSS, JavaScript, and modern frameworks like
+            React.js and Tailwind CSS. I excel in building interactive user interfaces and
+            single-page applications.
           </p>
 
           <a
