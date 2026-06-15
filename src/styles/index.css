@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Keeping core variables for some specific gradients if needed, but Tailwind handles most now */
+    --accent-primary: #3B82F6;
+    --accent-secondary: #8B5CF6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased text-slate-800 bg-slate-50 transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply text-slate-100 bg-slate-950;
+  }
+}
+
+@layer components {
+  /* Reusable Glass Card Component */
+  .glass-card {
+    @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-2xl shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  /* Reusable Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-violet-500 text-white font-semibold rounded-full shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent text-slate-800 dark:text-slate-100 border-2 border-slate-200 dark:border-slate-700 font-semibold rounded-full transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-2 bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent;
+  }
+
+  .section-subtitle {
+    @apply text-center text-lg text-slate-500 dark:text-slate-400 mb-12 md:mb-16;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

@@ -1,79 +1,48 @@
-# 🌐 Utkarsh Gupta - Developer Portfolio
+# Utkarsh Gupta - Senior Frontend Engineer Portfolio
 
-Welcome to my personal portfolio website built using **Create React App (CRA)** and styled with **custom CSS**. This project showcases my skills, projects, and contact details — all in a clean, fully responsive layout designed from scratch.
+Welcome to the source code of my personal portfolio website, built with modern frontend engineering standards.
 
----
+## 🚀 Technologies Used
+- **React.js 18**
+- **Vite** (for blazing fast builds)
+- **Tailwind CSS v3** (Utility-first styling framework)
+- **CSS Variables** (for robust Dark/Light mode theming)
+- **Glassmorphism UI**
 
-## 🚀 Features
+## 🌟 Key Features
+- **Fully Responsive:** Perfectly optimized for mobile, tablet, and desktop screens.
+- **Dark Mode Support:** Seamless toggling between light and dark themes using Tailwind's `dark:` class feature and context API.
+- **Modern UI/UX:** Clean, minimalistic aesthetic utilizing glassmorphism and subtle micro-animations.
+- **Component-Driven Architecture:** Clean codebase with highly reusable atomic components.
+- **Featured Projects:** Showcases complex, production-grade applications.
 
-- 🎨 Custom-designed UI using pure CSS (no framework)
-- 🌙 Dark/light theme toggle with localStorage support
-- 📱 Fully responsive design for mobile, tablet, and desktop
-- 💡 Highlights professional projects and key technologies
-- 🔗 External links to GitHub, LinkedIn, and Resume
+## 🛠️ Local Development
 
----
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/utkarsh3020/Portfolio_Web_App.git
+   ```
 
-## 🛠️ Tech Stack
+2. **Navigate to the directory:**
+   ```bash
+   cd Portfolio_Web_App
+   ```
 
-- **Frontend**: React.js (CRA), JavaScript, HTML5, CSS3
-- **Styling**: Custom CSS (No framework)
-- **Animations**: CSS transitions & keyframes
-- **Hosting**: GitHub Pages
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
----
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## 📂 Folder Structure
-
-```
-src/
-│
-├── assets/ # Images, icons, and other static files
-├── components/ # Reusable React components (Navbar, Footer, Home, About, Contact etc.)
-├── styles/ # CSS files and variables
-├── App.js # Main component
-├── index.js # ReactDOM render
-└── App.css # Global styles
-```
-
-## 📦 Installation
-
-To run this project locally:
-
+## 📦 Deployment
+This project is deployed to GitHub Pages. To deploy a new version:
 ```bash
-# 1. Clone the repository
-git clone https://github.com/utkarsh3020/portfolio.git4
-
-# 2. Navigate to the project folder
-cd portfolio
-
-# 3. Install dependencies
-npm install
-
-# 4. Start development server
-npm start
+npm run deploy
 ```
 
-## 🌐 Live Demo
-👉 Check out the live site - https://utkarsh3020.github.io/Portfolio_Web_App/
-
-## 🧠 What I Learned
-```
-Creating responsive layouts with custom CSS
-
-Managing theme state and storing preferences in localStorage
-
-Structuring reusable and maintainable React components
-
-Deploying CRA-based apps on GitHub Pages
-```
-
-## 📧 Contact Me
-📬 Email: utkarshguptta@gmail.com
-
-## 💼 LinkedIn: Utkarsh Gupta
-
-## 🌐 Portfolio: https://utkarsh3020.github.io/portfolio
-
-## 📃 License
-This project is open-source and available under the MIT License.
+---
+*Built with ❤️ by Utkarsh Gupta*
