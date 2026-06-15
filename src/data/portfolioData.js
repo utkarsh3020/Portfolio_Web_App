@@ -5,9 +5,9 @@ export const personalInfo = {
   role: "Senior Frontend Engineer & React Specialist",
   tagline: "Crafting high-performance, scalable web applications with intuitive user experiences. 3+ years of driving business value through optimized UI architectures.",
   about: "I am an experienced Frontend Developer specializing in the React ecosystem. With over 3 years of professional experience, I focus on building scalable component libraries, optimizing web performance, and delivering complex, data-driven interfaces. I bridge the gap between robust engineering and exceptional user experience.",
-  email: "utkarsh@example.com", // Placeholder
+  email: "utkarshguptta@gmail.com", // Placeholder
   github: "https://github.com/utkarsh3020",
-  linkedin: "https://linkedin.com/in/utkarsh3020", // Placeholder
+  linkedin: "https://linkedin.com/in/utkarshguptta", // Placeholder
   resume: "/assets/UtkarshGupta_CV.pdf",
 };
 
