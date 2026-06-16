@@ -1,4 +1,5 @@
 import ProjectImg1 from "../assets/Yikshar.jpg";
+import ProjectImg2 from "../assets/budgetwise.png"
 
 export const personalInfo = {
   name: "Utkarsh Gupta",
@@ -93,6 +94,30 @@ export const projects = [
     ],
     github: "#",
     live: "https://yikshar.com/"
+  },
+  {
+    id: 2,
+    img: ProjectImg2,
+    title: "BudgetWise",
+    shortDescription: "A comprehensive personal finance tracking application designed to help users manage budgets, track expenses, and visualize financial goals.",
+    longDescription: "BudgetWise is an intuitive and responsive personal finance application that empowers users to take control of their financial health. It features secure user authentication, an interactive dashboard with real-time financial insights, and dynamic charts for expense categorization. The application leverages Redux Toolkit for seamless state management and utilizes modern charting libraries to present complex financial data in an easily digestible format, enabling users to make informed financial decisions.",
+    features: [
+      "Secure User Authentication and Data Encryption",
+      "Interactive Dashboard with Real-time Financial Insights",
+      "Dynamic Charts and Graphs for Expense Visualization",
+      "Customizable Budget Creation and Goal Tracking",
+      "Responsive Design for Desktop and Mobile Devices"
+    ],
+    technologies: ["React.js", "Redux Toolkit", "Tailwind CSS", "REST APIs", "Chart.js", "Vite"],
+    businessImpact: "Improved user financial literacy and engagement by providing actionable insights through intuitive data visualization and streamlined budget management tools.",
+    bullets: [
+      "Developed a responsive and user-friendly interface using React.js and Tailwind CSS.",
+      "Implemented comprehensive state management for financial data using Redux Toolkit.",
+      "Integrated secure REST APIs to handle sensitive user data and transaction records.",
+      "Utilized advanced charting libraries to create interactive and insightful financial visualizations."
+    ],
+    github: "https://github.com/utkarsh3020/budgetwise",
+    live: "https://utkarsh3020.github.io/budgetwise/"
   },
   // {
   //   id: 2,
